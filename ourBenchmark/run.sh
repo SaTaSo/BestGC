@@ -1,7 +1,7 @@
 #!/bin/bash
 
 work="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-
+#sataso
 results_dir=$work/results
 graphs_dir=$work/graphs
 logs_dir=$work/logs
