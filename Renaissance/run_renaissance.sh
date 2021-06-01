@@ -32,7 +32,7 @@ function run {
     prefix = $bench-$day
     sufix=$gc
     echo "Starting $sufix"
-    $gc_script -jar /home/stavakoli/renaissance/renaissance-gpl-0.11.0.jar $bench --repetitions 10 --no-forced-gc &> $logs_dir/$bench.log
+    $gc_script -jar ./renaissance-gpl-0.11.0.jar $bench --repetitions 10 --no-forced-gc &> $logs_dir/$bench.log
     # Backup Logs "$GC-$max_heap-$min-heap-gc.log"
     echo "Saving logs to $results_dir/$prefix/$sufix ..."
     mkdir -p $results_dir/$prefix/$sufix

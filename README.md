@@ -45,3 +45,5 @@ https://jmeter.apache.org/download_jmeter.cgi
 To test the PetClininc we will use a non-GUI mode of the JMeter using a JMX file. you may find the JMX file
 pluss the excel files that contain the input values to call the APIs in PetClinic.
 
+CSV files to test the APIs can be found in csv folder in petClinic directory. Replace `DATA_FILE` file locations 
+in the .jmx file that points to the adrees of the CSV folder on your machine.

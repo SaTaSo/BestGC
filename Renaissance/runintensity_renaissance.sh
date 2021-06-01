@@ -31,7 +31,7 @@ function run {
     echo "starting logload.sh"
     sh ./logload.sh $bench &
     echo "Starting $sufix"
-    $gc_script -jar /home/stavakoli/renaissance/renaissance-gpl-0.11.0.jar $bench --repetitions 10 --no-forced-gc &> $logs_dir/$bench.log
+    $gc_script -jar ./renaissance-gpl-0.11.0.jar $bench --repetitions 10 --no-forced-gc &> $logs_dir/$bench.log
     ps aux | grep "logload" | grep -v grep | cut -d" " -f3 | xargs kill -9
     pkill atop
     ps aux | grep "atop" | grep -v grep | cut -d" " -f3 | xargs kill -9

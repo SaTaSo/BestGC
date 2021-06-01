@@ -34,7 +34,7 @@ function run {
     sufix=$gc
     echo "Starting $sufix"
 
-    $gc_script -jar /home/stavakoli/dacapo-9.12-MR1-bach.jar $bench -n $iter -s $size &> $logs_dir/$bench.log
+    $gc_script -jar ./dacapo-9.12-MR1-bach.jar $bench -n $iter -s $size &> $logs_dir/$bench.log
 
     # Backup Logs "$GC-$max_heap-$min-heap-gc.log"
     echo "Saving logs to $results_dir/$prefix/$sufix ..."

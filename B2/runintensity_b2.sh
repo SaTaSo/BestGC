@@ -21,10 +21,7 @@ function runSet {
     size=$1
     reads=$2
     oper=$3
-#    run $bin_dir/cms-java cms
     run $bin_dir/g1-java g1
- #   run $bin_dir/shenandoah-java shenandoah
-  #  run $bin_dir/zgc-java zgc
 }
 
 function run {

@@ -36,7 +36,7 @@ function run {
     echo "starting recording running threads"
     sh ./logthr.sh $bench &
     echo "Starting $sufix"
-    $gc_script -jar /home/stavakoli/dacapo-9.12-MR1-bach.jar $bench -n $iter -s $size &> $logs_dir/$bench.log
+    $gc_script -jar ./dacapo-9.12-MR1-bach.jar $bench -n $iter -s $size &> $logs_dir/$bench.log
     ps aux | grep "logthr.sh" | grep -v grep | awk '{print $2}' | xargs kill -9
     pkill atop
     ps aux | grep "atop" | grep -v grep | cut -d" " -f3 | xargs kill -9
